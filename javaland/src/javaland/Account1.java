@@ -1,26 +1,27 @@
 	package javaland;
 	
 	public class Account1 {
-	 private double money;
+	 protected double balance;
 	
 	 public Account1(double s){
-	  money = s;
+	  balance = s;
 	 }
 	 
-	 public double getMoney(){
-	  return money;
+	 public double getBalance(){
+	  return balance;
 	 }
 	 
-	 public void setMoney(double s){
-	  money =s;
+	 public void setBalance(double s){
+	  balance =s;
 	 }
 	 
-	 public void add(double s){
-	  money += s;
+	 public void credit(double s){
+	  balance = balance + s;
 	 }
 	 
-	 public void withdraw(double s){
-	  money -= s;
+	 public int debit(double s){
+	  balance = balance - s;
+	  return 0;
 	 }
 	}
 	 
